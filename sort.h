@@ -8,9 +8,10 @@
 
 /*-- Sorts --*/
 void	radix_sort(int *arr, int size);
+void	counting_sort(int *arr, int size, int exp);
 
 /*-- Utils --*/
 int		find_max_num(int *arr, int size);
-void	printArray(int *arr, int n);
+void	print_array(int *arr, int n);
 
 #endif
