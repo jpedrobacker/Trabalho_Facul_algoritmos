@@ -7,6 +7,7 @@ int main()
 
 	printf("Antes da ordenação: ");
 	print_array(arr, size);
+	printf("\n");
 
 	radix_sort(arr, size);
 	printf("Pós ordenação: ");

@@ -27,7 +27,13 @@ void	counting_sort(int *arr, int size, int exp)
 void	radix_sort(int *arr, int size)
 {
 	int max = find_max_num(arr, size);
+	int i = 1;
 
 	for (int exp = 1; max / exp > 0; exp *= 10)
+	{
 		counting_sort(arr, size, exp);
+		printf("Iteração %d: ", i++);
+		print_array(arr, size);
+	}
+	printf("\n");
 }
